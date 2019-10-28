@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 class Users extends Component {
   render() {
-    let users = this.props.users.map((user, idx) => <p>{user.username}</p>)
+    let users = this.props.users.map((user, idx) => <li>{user.username}</li>)
     return (
       <div>
         <ul>
